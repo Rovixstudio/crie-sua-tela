@@ -1,0 +1,101 @@
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --accent: #3b82f6;
+  --button: #2563eb;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+.dark {
+  --bg: #111827;
+  --text: #f9fafb;
+  --text-muted: #9ca3af;
+  --accent: #60a5fa;
+  --button: #3b82f6;
+  --shadow: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.builder {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.controls button {
+  padding: 10px 15px;
+  border: none;
+  background: var(--button);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+  flex: 1 0 auto;
+}
+
+.controls button:hover {
+  background: var(--accent);
+}
+
+.preview {
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 30px;
+  min-height: 300px;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: 0.3s ease;
+  overflow-x: auto;
+}
+
+.preview *:hover {
+  outline: 1px dashed var(--accent);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .controls button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .preview {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .builder h1 {
+    font-size: 20px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controls button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

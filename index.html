@@ -1,0 +1,16 @@
+<div class="builder">
+  <h1>🛠️ Construtor de Página</h1>
+  <div class="controls">
+    <button onclick="addBlock('title')">+ Título</button>
+    <button onclick="addBlock('text')">+ Parágrafo</button>
+    <button onclick="addBlock('image')">+ Imagem</button>
+    <button onclick="addBlock('button')">+ Botão</button>
+    <button onclick="addBlock('divider')">+ Divisor</button>
+    <button onclick="toggleDarkMode()">🌗 Tema</button>
+    <button onclick="exportHTML()">⬇ Exportar</button>
+  </div>
+</div>
+
+<div id="preview" class="preview" contenteditable="true">
+  <p style="color: var(--text-muted);">Toque para começar a montar sua página...</p>
+</div>
