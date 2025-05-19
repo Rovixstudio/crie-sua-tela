@@ -71,8 +71,6 @@ body {
   outline: 1px dashed var(--accent);
 }
 
-/* Responsividade */
-
 @media (max-width: 768px) {
   .controls button {
     font-size: 13px;

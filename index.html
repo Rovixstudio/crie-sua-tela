@@ -1,16 +1,29 @@
-<div class="builder">
-  <h1>🛠️ Construtor de Página</h1>
-  <div class="controls">
-    <button onclick="addBlock('title')">+ Título</button>
-    <button onclick="addBlock('text')">+ Parágrafo</button>
-    <button onclick="addBlock('image')">+ Imagem</button>
-    <button onclick="addBlock('button')">+ Botão</button>
-    <button onclick="addBlock('divider')">+ Divisor</button>
-    <button onclick="toggleDarkMode()">🌗 Tema</button>
-    <button onclick="exportHTML()">⬇ Exportar</button>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Construtor de Páginas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="builder">
+    <h1>🛠️ Construtor de Página</h1>
+    <div class="controls">
+      <button onclick="addBlock('title')">+ Título</button>
+      <button onclick="addBlock('text')">+ Parágrafo</button>
+      <button onclick="addBlock('image')">+ Imagem</button>
+      <button onclick="addBlock('button')">+ Botão</button>
+      <button onclick="addBlock('divider')">+ Divisor</button>
+      <button onclick="toggleDarkMode()">🌗 Tema</button>
+      <button onclick="exportHTML()">⬇ Exportar</button>
+    </div>
   </div>
-</div>
 
-<div id="preview" class="preview" contenteditable="true">
-  <p style="color: var(--text-muted);">Toque para começar a montar sua página...</p>
-</div>
+  <div id="preview" class="preview" contenteditable="true">
+    <p style="color: var(--text-muted);">Toque para começar a montar sua página...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
